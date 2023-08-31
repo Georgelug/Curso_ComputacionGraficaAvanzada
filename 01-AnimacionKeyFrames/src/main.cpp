@@ -11,16 +11,16 @@
 #include <GLFW/glfw3.h>
 
 // program include
-#include "Headers/TimeManager.h"
+#include "CGALib\include\Headers/TimeManager.h"
 
 // Shader include
-#include "Headers/Shader.h"
+#include "CGALib\include\Headers\Shader.h"
 
 // Model geometric includes
-#include "Headers/Sphere.h"
-#include "Headers/Cylinder.h"
-#include "Headers/Box.h"
-#include "Headers/FirstPersonCamera.h"
+#include "CGALib\include\Headers/Sphere.h"
+#include "CGALib\include\Headers/Cylinder.h"
+#include "CGALib\include\Headers/Box.h"
+#include "CGALib\include\Headers/FirstPersonCamera.h"
 
 //GLM include
 #define GLM_FORCE_RADIANS
