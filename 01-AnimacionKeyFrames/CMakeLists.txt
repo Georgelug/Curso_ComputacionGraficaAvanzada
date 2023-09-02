@@ -7,12 +7,13 @@ if(CMAKE_SYSTEM_NAME STREQUAL "Windows")
     include_directories(
         01-AnimacionKeyFrames 
         ${CMAKE_SOURCE_DIR}/CGALib/include
+        "/Headers/"
         "/usr/include/freetype2" 
         "../external/assimp/include"
         "../external/glfw/include"
         "../external/glm"
         "../external/glew/include"
-        "../external/FreeImage/include"
+        "../external/FreeImage/include" 
         "../external/OpenAL/include"
         "../external/Freetype/include"
         "../external/freealut/include"
