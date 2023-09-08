@@ -1,31 +1,37 @@
+cmake_minimum_required(VERSION 3.13)
+project(modio)
+
 add_definitions(-DBUILDING_DLL) # Define a macro indicating DLL import
 
 
 if(CMAKE_SYSTEM_NAME STREQUAL "Windows")
     # Set the directory where DLLs are located
     set(CMAKE_DLLTOOLCHAIN_PREFIX "../dlls")
+
     include_directories(
         01-AnimacionKeyFrames 
-        ${CMAKE_SOURCE_DIR}/CGALib/include
-        "/Headers/"
-        "/usr/include/freetype2" 
-        "../external/assimp/include"
-        "../external/glfw/include"
-        "../external/glm"
-        "../external/glew/include"
-        "../external/FreeImage/include" 
-        "../external/OpenAL/include"
-        "../external/Freetype/include"
-        "../external/freealut/include"
+        ${CMAKE_SOURCE_DIR}/CGALib/
+        "${CMAKE_CURRENT_SOURCE_DIR}/../CGALib/include/Headers/"
+        "${CMAKE_CURRENT_SOURCE_DIR}/../usr/include/freetype2" 
+        "${CMAKE_CURRENT_SOURCE_DIR}/../external/assimp/include"
+        "${CMAKE_CURRENT_SOURCE_DIR}/../external/glfw/include"
+        "${CMAKE_CURRENT_SOURCE_DIR}/../external/glm"
+        "${CMAKE_CURRENT_SOURCE_DIR}/../external/glew/include"
+        "${CMAKE_CURRENT_SOURCE_DIR}/../external/FreeImage/include" 
+        "${CMAKE_CURRENT_SOURCE_DIR}/../external/OpenAL/include"
+        "${CMAKE_CURRENT_SOURCE_DIR}/../external/Freetype/include"
+        "${CMAKE_CURRENT_SOURCE_DIR}/../external/freealut/include"
     )
     link_directories(
-        "../external/assimp/lib"
-        "../external/glfw/lib"
-        "../external/Freetype/lib"
-        "../external/FreeImage/lib"
-        "../external/glew/lib"
-        "../external/freealut/lib"
-        "../external/OpenAL/lib/x64"
+        "${CMAKE_CURRENT_SOURCE_DIR}/../CGALib/include/Headers/"
+        "${CMAKE_CURRENT_SOURCE_DIR}/../usr/include/freetype2"
+        "${CMAKE_CURRENT_SOURCE_DIR}/../external/assimp/lib"
+        "${CMAKE_CURRENT_SOURCE_DIR}/../external/glfw/lib"
+        "${CMAKE_CURRENT_SOURCE_DIR}/../external/Freetype/lib"
+        "${CMAKE_CURRENT_SOURCE_DIR}/../external/FreeImage/lib"
+        "${CMAKE_CURRENT_SOURCE_DIR}/../external/glew/lib"
+        "${CMAKE_CURRENT_SOURCE_DIR}/../external/freealut/lib"
+        "${CMAKE_CURRENT_SOURCE_DIR}/../external/OpenAL/lib/x64"
     )
 elseif(CMAKE_SYSTEM_NAME STREQUAL "Linux")
     include_directories(${CMAKE_SOURCE_DIR}/CGALib/include)
@@ -35,7 +41,7 @@ add_executable(01-AnimacionKeyFrames ./src/main.cpp)
 
 set_target_properties(01-AnimacionKeyFrames 
     PROPERTIES
-    RUNTIME_OUTPUT_DIRECTORY "../../bin"
+    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../bin"
 )
 
 

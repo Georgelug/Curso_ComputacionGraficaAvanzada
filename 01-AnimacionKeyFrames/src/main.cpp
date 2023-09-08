@@ -11,16 +11,17 @@
 #include <GLFW/glfw3.h>
 
 // program include
-#include "Headers/TimeManager.h"
+//#include "Headers/TimeManager.h"
+#include "TimeManager.h"
 
 // Shader include
-#include "Headers\Shader.h"
+#include "Shader.h"
 
 // Model geometric includes
-#include "Headers/Sphere.h"
-#include "Headers/Cylinder.h"
-#include "Headers/Box.h"
-#include "Headers/FirstPersonCamera.h"
+#include "Sphere.h"
+#include "Cylinder.h"
+#include "Box.h"
+#include "FirstPersonCamera.h"
 
 //GLM include
 #define GLM_FORCE_RADIANS
@@ -28,12 +29,12 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-#include "Headers/Texture.h"
+#include "Texture.h"
 
 // Include loader Model class
-#include "Headers/Model.h"
+#include "Model.h"
 
-#include "Headers/AnimationUtils.h"
+#include "AnimationUtils.h"
 
 #define ARRAY_SIZE_IN_ELEMENTS(a) (sizeof(a)/sizeof(a[0]))
 
@@ -691,7 +692,8 @@ bool processInput(bool continueApplication) {
 		if(modelSelected == 3)
 			keyFramesBuzzJoints = getKeyRotFrames(fileName);
 		if(modelSelected == 4)
-			keyFramesBuzz = getKeyRotFrames(fileName);
+			keyFramesBuzzJoints = getKeyRotFrames(fileName);
+
 	}
 	if(availableSave && glfwGetKey(window, GLFW_KEY_ENTER) == GLFW_PRESS){
 		saveFrame = true;
@@ -1118,11 +1120,11 @@ void applicationLoop() {
 		modelMatrixBuzzLeftArm = glm::translate(modelMatrixBuzzLeftArm,glm::vec3(0.178785,0.58335,-0.026702)); // fijarse en el pivote
 		modelMatrixBuzzLeftArm = glm::rotate(modelMatrixBuzzLeftArm,rotBuzzLeftArm,glm::vec3(1.0,0.0,0.0));
 		modelMatrixBuzzLeftArm = glm::translate(modelMatrixBuzzLeftArm,glm::vec3(-0.178785,-0.58335,0.026702));
-		modelMatrixBuzzLeftArm.render(modelMatrixBuzzLeftArm);
+		modelBuzzLeftArm.render(modelMatrixBuzzLeftArm);
 		
 		glm::mat4 modelMatrixBuzzLeftForeArm = glm::mat4(modelMatrixBuzzLeftArm);
 		modelMatrixBuzzLeftForeArm = glm::rotate(modelMatrixBuzzLeftForeArm,rotBuzzLeftForeArm,glm::vec3(0.0,1.0,0.0));
-		modelMatrixBuzzLeftForeArm.render(modelMatrixBuzzLeftForeArm);
+		modelBuzzLeftForeArm.render(modelMatrixBuzzLeftForeArm);
 		
 		glm::mat4 modelMatrixBuzzLeftHand = glm::mat4(modelMatrixBuzzLeftForeArm);
 		modelBuzzLeftHand.render(modelMatrixBuzzLeftHand);
@@ -1164,8 +1166,7 @@ void applicationLoop() {
 			}
 
 
-		}
-		else if(keyFramesDartJoint.size() > 0){
+		}else if(keyFramesDartJoints.size() > 0){
 			interpolationDartJoints = numPasosDartJoints / (float) maxNumPasosDartJoints;
 			numPasosDartJoints ++;
 
@@ -1204,7 +1205,7 @@ void applicationLoop() {
 
 				if(interpolationDart > 1.0){
 					numPasosDart = 0;
-					interpolationDart 0;
+					interpolationDart = 0;
 					indexFrameDart = indexFrameDartNext;
 					indexFrameDartNext ++;
 				}
