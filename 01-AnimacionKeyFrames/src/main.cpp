@@ -209,9 +209,9 @@ void init(int width, int height, std::string strTitle, bool bFullScreen) {
 	screenWidth = width;
 	screenHeight = height;
 
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+	//glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+	//glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+	//glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
 	if (bFullScreen)
 		window = glfwCreateWindow(width, height, strTitle.c_str(),
@@ -219,7 +219,7 @@ void init(int width, int height, std::string strTitle, bool bFullScreen) {
 	else
 		window = glfwCreateWindow(width, height, strTitle.c_str(), nullptr,
 				nullptr);
-
+	
 	if (window == nullptr) {
 		std::cerr
 				<< "Error to create GLFW window, you can try download the last version of your video card that support OpenGL 3.3+"
@@ -252,7 +252,7 @@ void init(int width, int height, std::string strTitle, bool bFullScreen) {
 	glEnable(GL_CULL_FACE);
 
 	// Inicialización de los shaders
-	shader.initialize("../Shaders/colorShader.vs", "../Shaders/colorShader.fs");
+	shader.initialize("../Shaders/colorShader.vs", "../Shaders/colorShader.fs"); // checar esto
 	shaderSkybox.initialize("../Shaders/skyBox.vs", "../Shaders/skyBox.fs");
 	shaderMulLighting.initialize("../Shaders/iluminacion_texture_res.vs", "../Shaders/multipleLights.fs");
 
@@ -1305,7 +1305,7 @@ void applicationLoop() {
 }
 
 int main(int argc, char **argv) {
-	init(800, 700, "Window GLFW", false);
+	init(1000, 900, "Window GLFW", false);
 	applicationLoop();
 	destroy();
 	return 1;
