@@ -1186,15 +1186,15 @@ void applicationLoop() {
 			if(indexFrameDartNext > keyFramesDartJoints.size() - 1)
 				indexFrameDartJointsNext = 0;
 
-			rotDartHead = interpolate(keyFramesDartJoints, indexFrameDartJoints, indexFrameDartJointsNext,0,interpolationDartJoints);
-			
-			rotDartLeftArm = interpolate(keyFramesDartJoints, indexFrameDartJoints, indexFrameDartJointsNext,1,interpolationDartJoints);
-			rotDartLeftHand = interpolate(keyFramesDartJoints, indexFrameDartJoints, indexFrameDartJointsNext,2,interpolationDartJoints);
-			rotDartLeftLeg = interpolate(keyFramesDartJoints, indexFrameDartJoints, indexFrameDartJointsNext,3,interpolationDartJoints);
-		
-			rotDartRightArm = interpolate(keyFramesDartJoints, indexFrameDartJoints, indexFrameDartJointsNext,4,interpolationDartJoints);
-			rotDartRightHand = interpolate(keyFramesDartJoints, indexFrameDartJoints, indexFrameDartJointsNext,5,interpolationDartJoints);
-			rotDartRightLeg = interpolate(keyFramesDartJoints, indexFrameDartJoints, indexFrameDartJointsNext,6,interpolationDartJoints);
+			//rotDartHead = interpolate(keyFramesDartJoints, indexFrameDartJoints, indexFrameDartJointsNext,0,interpolationDartJoints);
+			//
+			//rotDartLeftArm = interpolate(keyFramesDartJoints, indexFrameDartJoints, indexFrameDartJointsNext,1,interpolationDartJoints);
+			//rotDartLeftHand = interpolate(keyFramesDartJoints, indexFrameDartJoints, indexFrameDartJointsNext,2,interpolationDartJoints);
+			//rotDartLeftLeg = interpolate(keyFramesDartJoints, indexFrameDartJoints, indexFrameDartJointsNext,3,interpolationDartJoints);
+		//
+			//rotDartRightArm = interpolate(keyFramesDartJoints, indexFrameDartJoints, indexFrameDartJointsNext,4,interpolationDartJoints);
+			//rotDartRightHand = interpolate(keyFramesDartJoints, indexFrameDartJoints, indexFrameDartJointsNext,5,interpolationDartJoints);
+			//rotDartRightLeg = interpolate(keyFramesDartJoints, indexFrameDartJoints, indexFrameDartJointsNext,6,interpolationDartJoints);
 		
 			if(modelSelected == 2 && record){
 				matrixDart.push_back(modelMatrixDart);
@@ -1220,7 +1220,7 @@ void applicationLoop() {
 					indexFrameDartNext = 0;
 				}
 
-				modelMatrixDart = interpolate(keyFramesDart, indexFrameDart, indexFrameDartNext, 0, interpolationDart);
+				//modelMatrixDart = interpolate(keyFramesDart, indexFrameDart, indexFrameDartNext, 0, interpolationDart);
 			}
 
 		}
