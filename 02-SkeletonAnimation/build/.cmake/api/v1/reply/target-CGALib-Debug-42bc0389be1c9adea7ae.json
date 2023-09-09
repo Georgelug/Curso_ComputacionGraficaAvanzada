@@ -1,0 +1,470 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/bin/libCGALib.dll"
+		},
+		{
+			"path" : "CGBALIB/libCGALib.dll.a"
+		},
+		{
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/bin/libCGALib.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"link_directories",
+			"target_link_libraries",
+			"add_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 36,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 42,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 4,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 9,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "BUILDING_DLL"
+				},
+				{
+					"define" : "CGALib_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/CGALib"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/./include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/../external/assimp/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/../external/glfw/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/../external/glm"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/../external/glew/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/../external/FreeImage/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/../external/OpenAL/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/../external/Freetype/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/../external/freealut/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34
+			]
+		}
+	],
+	"id" : "CGALib::@b4a303906747d50f87ea",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LC:\\Users\\JORGEE~1\\Desktop\\CGA\\COMPUT~1\\CGALib\\..\\external\\assimp\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LC:\\Users\\JORGEE~1\\Desktop\\CGA\\COMPUT~1\\CGALib\\..\\external\\glfw\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LC:\\Users\\JORGEE~1\\Desktop\\CGA\\COMPUT~1\\CGALib\\..\\external\\Freetype\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L\"C:\\Users\\Jorge Esparza\\Desktop\\CGA\\ComputacionGraficaAvanzada\\CGALib\\..\\external\\FreeImage\\lib\"",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LC:\\Users\\JORGEE~1\\Desktop\\CGA\\COMPUT~1\\CGALib\\..\\external\\glew\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lopengl32",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lglfw3dll",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lglew32",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lassimp",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lfreetype",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "CGALib",
+	"nameOnDisk" : "libCGALib.dll",
+	"paths" : 
+	{
+		"build" : "CGBALIB",
+		"source" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/include/Headers/AbstractModel.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/include/Headers/AnimationUtils.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/include/Headers/Bones.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/include/Headers/Box.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/include/Headers/Camera.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/include/Headers/Colisiones.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/include/Headers/Cylinder.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/include/Headers/FirstPersonCamera.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/include/Headers/FontTypeRendering.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/include/Headers/Mesh.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/include/Headers/Model.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/include/Headers/Shader.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/include/Headers/ShadowBox.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/include/Headers/Sphere.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/include/Headers/Terrain.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/include/Headers/Texture.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/include/Headers/ThirdPersonCamera.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/include/Headers/TimeManager.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/include/Headers/mathUtil.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/include/Headers/stb_image.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/Bones.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/Box.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/BuzzModel.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/Cylinder.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/FirstPersonCamera.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/FontTypeRendering.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/Mesh.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/Model.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/Shader.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/ShadowBox.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/Sphere.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/Terrain.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/Texture.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/ThirdPersonCamera.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/TimeManager.cpp",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}

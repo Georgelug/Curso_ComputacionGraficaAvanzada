@@ -1,0 +1,98 @@
+[
+{
+  "directory": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DBUILDING_DLL @CMakeFiles/02-SkeletonAnimation.dir/includes_CXX.rsp -g -o CMakeFiles\\02-SkeletonAnimation.dir\\src\\main.cpp.obj -c \"C:\\Users\\Jorge Esparza\\Desktop\\CGA\\ComputacionGraficaAvanzada\\02-SkeletonAnimation\\src\\main.cpp\"",
+  "file": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/src/main.cpp",
+  "output": "CMakeFiles/02-SkeletonAnimation.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build/CGBALIB",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DBUILDING_DLL -DCGALib_EXPORTS @CMakeFiles/CGALib.dir/includes_CXX.rsp -g -o CMakeFiles\\CGALib.dir\\src\\Bones.cpp.obj -c \"C:\\Users\\Jorge Esparza\\Desktop\\CGA\\ComputacionGraficaAvanzada\\CGALib\\src\\Bones.cpp\"",
+  "file": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/Bones.cpp",
+  "output": "CGBALIB/CMakeFiles/CGALib.dir/src/Bones.cpp.obj"
+},
+{
+  "directory": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build/CGBALIB",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DBUILDING_DLL -DCGALib_EXPORTS @CMakeFiles/CGALib.dir/includes_CXX.rsp -g -o CMakeFiles\\CGALib.dir\\src\\Box.cpp.obj -c \"C:\\Users\\Jorge Esparza\\Desktop\\CGA\\ComputacionGraficaAvanzada\\CGALib\\src\\Box.cpp\"",
+  "file": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/Box.cpp",
+  "output": "CGBALIB/CMakeFiles/CGALib.dir/src/Box.cpp.obj"
+},
+{
+  "directory": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build/CGBALIB",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DBUILDING_DLL -DCGALib_EXPORTS @CMakeFiles/CGALib.dir/includes_CXX.rsp -g -o CMakeFiles\\CGALib.dir\\src\\BuzzModel.cpp.obj -c \"C:\\Users\\Jorge Esparza\\Desktop\\CGA\\ComputacionGraficaAvanzada\\CGALib\\src\\BuzzModel.cpp\"",
+  "file": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/BuzzModel.cpp",
+  "output": "CGBALIB/CMakeFiles/CGALib.dir/src/BuzzModel.cpp.obj"
+},
+{
+  "directory": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build/CGBALIB",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DBUILDING_DLL -DCGALib_EXPORTS @CMakeFiles/CGALib.dir/includes_CXX.rsp -g -o CMakeFiles\\CGALib.dir\\src\\Cylinder.cpp.obj -c \"C:\\Users\\Jorge Esparza\\Desktop\\CGA\\ComputacionGraficaAvanzada\\CGALib\\src\\Cylinder.cpp\"",
+  "file": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/Cylinder.cpp",
+  "output": "CGBALIB/CMakeFiles/CGALib.dir/src/Cylinder.cpp.obj"
+},
+{
+  "directory": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build/CGBALIB",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DBUILDING_DLL -DCGALib_EXPORTS @CMakeFiles/CGALib.dir/includes_CXX.rsp -g -o CMakeFiles\\CGALib.dir\\src\\FirstPersonCamera.cpp.obj -c \"C:\\Users\\Jorge Esparza\\Desktop\\CGA\\ComputacionGraficaAvanzada\\CGALib\\src\\FirstPersonCamera.cpp\"",
+  "file": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/FirstPersonCamera.cpp",
+  "output": "CGBALIB/CMakeFiles/CGALib.dir/src/FirstPersonCamera.cpp.obj"
+},
+{
+  "directory": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build/CGBALIB",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DBUILDING_DLL -DCGALib_EXPORTS @CMakeFiles/CGALib.dir/includes_CXX.rsp -g -o CMakeFiles\\CGALib.dir\\src\\FontTypeRendering.cpp.obj -c \"C:\\Users\\Jorge Esparza\\Desktop\\CGA\\ComputacionGraficaAvanzada\\CGALib\\src\\FontTypeRendering.cpp\"",
+  "file": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/FontTypeRendering.cpp",
+  "output": "CGBALIB/CMakeFiles/CGALib.dir/src/FontTypeRendering.cpp.obj"
+},
+{
+  "directory": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build/CGBALIB",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DBUILDING_DLL -DCGALib_EXPORTS @CMakeFiles/CGALib.dir/includes_CXX.rsp -g -o CMakeFiles\\CGALib.dir\\src\\Mesh.cpp.obj -c \"C:\\Users\\Jorge Esparza\\Desktop\\CGA\\ComputacionGraficaAvanzada\\CGALib\\src\\Mesh.cpp\"",
+  "file": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/Mesh.cpp",
+  "output": "CGBALIB/CMakeFiles/CGALib.dir/src/Mesh.cpp.obj"
+},
+{
+  "directory": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build/CGBALIB",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DBUILDING_DLL -DCGALib_EXPORTS @CMakeFiles/CGALib.dir/includes_CXX.rsp -g -o CMakeFiles\\CGALib.dir\\src\\Model.cpp.obj -c \"C:\\Users\\Jorge Esparza\\Desktop\\CGA\\ComputacionGraficaAvanzada\\CGALib\\src\\Model.cpp\"",
+  "file": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/Model.cpp",
+  "output": "CGBALIB/CMakeFiles/CGALib.dir/src/Model.cpp.obj"
+},
+{
+  "directory": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build/CGBALIB",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DBUILDING_DLL -DCGALib_EXPORTS @CMakeFiles/CGALib.dir/includes_CXX.rsp -g -o CMakeFiles\\CGALib.dir\\src\\Shader.cpp.obj -c \"C:\\Users\\Jorge Esparza\\Desktop\\CGA\\ComputacionGraficaAvanzada\\CGALib\\src\\Shader.cpp\"",
+  "file": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/Shader.cpp",
+  "output": "CGBALIB/CMakeFiles/CGALib.dir/src/Shader.cpp.obj"
+},
+{
+  "directory": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build/CGBALIB",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DBUILDING_DLL -DCGALib_EXPORTS @CMakeFiles/CGALib.dir/includes_CXX.rsp -g -o CMakeFiles\\CGALib.dir\\src\\ShadowBox.cpp.obj -c \"C:\\Users\\Jorge Esparza\\Desktop\\CGA\\ComputacionGraficaAvanzada\\CGALib\\src\\ShadowBox.cpp\"",
+  "file": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/ShadowBox.cpp",
+  "output": "CGBALIB/CMakeFiles/CGALib.dir/src/ShadowBox.cpp.obj"
+},
+{
+  "directory": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build/CGBALIB",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DBUILDING_DLL -DCGALib_EXPORTS @CMakeFiles/CGALib.dir/includes_CXX.rsp -g -o CMakeFiles\\CGALib.dir\\src\\Sphere.cpp.obj -c \"C:\\Users\\Jorge Esparza\\Desktop\\CGA\\ComputacionGraficaAvanzada\\CGALib\\src\\Sphere.cpp\"",
+  "file": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/Sphere.cpp",
+  "output": "CGBALIB/CMakeFiles/CGALib.dir/src/Sphere.cpp.obj"
+},
+{
+  "directory": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build/CGBALIB",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DBUILDING_DLL -DCGALib_EXPORTS @CMakeFiles/CGALib.dir/includes_CXX.rsp -g -o CMakeFiles\\CGALib.dir\\src\\Terrain.cpp.obj -c \"C:\\Users\\Jorge Esparza\\Desktop\\CGA\\ComputacionGraficaAvanzada\\CGALib\\src\\Terrain.cpp\"",
+  "file": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/Terrain.cpp",
+  "output": "CGBALIB/CMakeFiles/CGALib.dir/src/Terrain.cpp.obj"
+},
+{
+  "directory": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build/CGBALIB",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DBUILDING_DLL -DCGALib_EXPORTS @CMakeFiles/CGALib.dir/includes_CXX.rsp -g -o CMakeFiles\\CGALib.dir\\src\\Texture.cpp.obj -c \"C:\\Users\\Jorge Esparza\\Desktop\\CGA\\ComputacionGraficaAvanzada\\CGALib\\src\\Texture.cpp\"",
+  "file": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/Texture.cpp",
+  "output": "CGBALIB/CMakeFiles/CGALib.dir/src/Texture.cpp.obj"
+},
+{
+  "directory": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build/CGBALIB",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DBUILDING_DLL -DCGALib_EXPORTS @CMakeFiles/CGALib.dir/includes_CXX.rsp -g -o CMakeFiles\\CGALib.dir\\src\\ThirdPersonCamera.cpp.obj -c \"C:\\Users\\Jorge Esparza\\Desktop\\CGA\\ComputacionGraficaAvanzada\\CGALib\\src\\ThirdPersonCamera.cpp\"",
+  "file": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/ThirdPersonCamera.cpp",
+  "output": "CGBALIB/CMakeFiles/CGALib.dir/src/ThirdPersonCamera.cpp.obj"
+},
+{
+  "directory": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build/CGBALIB",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DBUILDING_DLL -DCGALib_EXPORTS @CMakeFiles/CGALib.dir/includes_CXX.rsp -g -o CMakeFiles\\CGALib.dir\\src\\TimeManager.cpp.obj -c \"C:\\Users\\Jorge Esparza\\Desktop\\CGA\\ComputacionGraficaAvanzada\\CGALib\\src\\TimeManager.cpp\"",
+  "file": "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/src/TimeManager.cpp",
+  "output": "CGBALIB/CMakeFiles/CGALib.dir/src/TimeManager.cpp.obj"
+}
+]

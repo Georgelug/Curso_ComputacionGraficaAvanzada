@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "CGBALIB",
+					"jsonFile" : "directory-CGBALIB-Debug-1d2223142238cb5f8692.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "modio",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "02-SkeletonAnimation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-02-SkeletonAnimation-Debug-fa206ca4b7981cfee2a0.json",
+					"name" : "02-SkeletonAnimation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "CGALib::@b4a303906747d50f87ea",
+					"jsonFile" : "target-CGALib-Debug-42bc0389be1c9adea7ae.json",
+					"name" : "CGALib",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build",
+		"source" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

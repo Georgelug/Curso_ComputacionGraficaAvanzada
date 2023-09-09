@@ -1,0 +1,319 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/bin/02-SkeletonAnimation.exe"
+		},
+		{
+			"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/bin/02-SkeletonAnimation.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"link_directories",
+			"target_link_libraries",
+			"add_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/CGALib/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 41,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 50,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 42,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "BUILDING_DLL"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/02-SkeletonAnimation"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/CGALib"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/../CGALib/include/Headers"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/../usr/include/freetype2"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/../external/assimp/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/../external/glfw/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/../external/glm"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/../external/glew/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/../external/FreeImage/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/../external/OpenAL/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/../external/Freetype/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/../external/freealut/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "CGALib::@b4a303906747d50f87ea"
+		}
+	],
+	"id" : "02-SkeletonAnimation::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LC:\\Users\\JORGEE~1\\Desktop\\CGA\\COMPUT~1\\02-SKE~1\\..\\CGALib\\include\\Headers",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L\"C:\\Users\\Jorge Esparza\\Desktop\\CGA\\ComputacionGraficaAvanzada\\02-SkeletonAnimation\\..\\usr\\include\\freetype2\"",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LC:\\Users\\JORGEE~1\\Desktop\\CGA\\COMPUT~1\\02-SKE~1\\..\\external\\assimp\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LC:\\Users\\JORGEE~1\\Desktop\\CGA\\COMPUT~1\\02-SKE~1\\..\\external\\glfw\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LC:\\Users\\JORGEE~1\\Desktop\\CGA\\COMPUT~1\\02-SKE~1\\..\\external\\Freetype\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L\"C:\\Users\\Jorge Esparza\\Desktop\\CGA\\ComputacionGraficaAvanzada\\02-SkeletonAnimation\\..\\external\\FreeImage\\lib\"",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LC:\\Users\\JORGEE~1\\Desktop\\CGA\\COMPUT~1\\02-SKE~1\\..\\external\\glew\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LC:\\Users\\JORGEE~1\\Desktop\\CGA\\COMPUT~1\\02-SKE~1\\..\\external\\freealut\\lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-LC:\\Users\\JORGEE~1\\Desktop\\CGA\\COMPUT~1\\02-SKE~1\\..\\external\\OpenAL\\lib\\x64",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lopengl32",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-Bstatic",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lglfw3dll",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Wl,-Bdynamic",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lglew32",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lassimp",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lfreetype",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lalut",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lOpenAL32",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "CGBALIB\\libCGALib.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lopengl32",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "-lglfw3dll",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lglew32",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lassimp",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lfreetype",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "02-SkeletonAnimation",
+	"nameOnDisk" : "02-SkeletonAnimation.exe",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

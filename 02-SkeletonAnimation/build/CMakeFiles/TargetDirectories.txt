@@ -1,0 +1,6 @@
+C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build/CMakeFiles/02-SkeletonAnimation.dir
+C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build/CMakeFiles/edit_cache.dir
+C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build/CGBALIB/CMakeFiles/CGALib.dir
+C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build/CGBALIB/CMakeFiles/edit_cache.dir
+C:/Users/Jorge Esparza/Desktop/CGA/ComputacionGraficaAvanzada/02-SkeletonAnimation/build/CGBALIB/CMakeFiles/rebuild_cache.dir
