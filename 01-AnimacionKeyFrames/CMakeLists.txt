@@ -18,7 +18,7 @@ if(CMAKE_SYSTEM_NAME STREQUAL "Windows")
         "${CMAKE_CURRENT_SOURCE_DIR}/../external/glfw/include"
         "${CMAKE_CURRENT_SOURCE_DIR}/../external/glm"
         "${CMAKE_CURRENT_SOURCE_DIR}/../external/glew/include"
-        "${CMAKE_CURRENT_SOURCE_DIR}/../external/FreeImage/include" 
+        "${CMAKE_CURRENT_SOURCE_DIR}/../external/FreeImage/include"             
         "${CMAKE_CURRENT_SOURCE_DIR}/../external/OpenAL/include"
         "${CMAKE_CURRENT_SOURCE_DIR}/../external/Freetype/include"
         "${CMAKE_CURRENT_SOURCE_DIR}/../external/freealut/include"
