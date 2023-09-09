@@ -42,7 +42,7 @@ add_executable(01-AnimacionKeyFrames ./src/main.cpp)
 
 set_target_properties(01-AnimacionKeyFrames 
     PROPERTIES
-    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../../bin"
+    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/../bin"
 )
 
 

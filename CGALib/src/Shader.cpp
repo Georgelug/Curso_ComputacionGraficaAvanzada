@@ -18,8 +18,7 @@ std::string Shader::loadShaderFile(std::string strFile) {
 	return strText;
 }
 
-void Shader::initialize(std::string strVertexFile,
-		std::string strFragmentFile, std::vector<std::string> nameFeedback) {
+void Shader::initialize(std::string strVertexFile, std::string strFragmentFile, std::vector<std::string> nameFeedback) {
 
 	std::string strVShader, strFShader;
 
