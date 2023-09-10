@@ -11,17 +11,17 @@
 #include <GLFW/glfw3.h>
 
 // program include
-//#include "Headers/TimeManager.h"
-#include "TimeManager.h"
+// program include
+#include "Headers/TimeManager.h"
 
 // Shader include
-#include "Shader.h"
+#include "Headers/Shader.h"
 
 // Model geometric includes
-#include "Sphere.h"
-#include "Cylinder.h"
-#include "Box.h"
-#include "FirstPersonCamera.h"
+#include "Headers/Sphere.h"
+#include "Headers/Cylinder.h"
+#include "Headers/Box.h"
+#include "Headers/FirstPersonCamera.h"
 
 //GLM include
 #define GLM_FORCE_RADIANS
@@ -29,12 +29,12 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-#include "Texture.h"
+#include "Headers/Texture.h"
 
 // Include loader Model class
-#include "Model.h"
+#include "Headers/Model.h"
 
-#include "AnimationUtils.h"
+#include "Headers/AnimationUtils.h"
 
 #define ARRAY_SIZE_IN_ELEMENTS(a) (sizeof(a)/sizeof(a[0]))
 
