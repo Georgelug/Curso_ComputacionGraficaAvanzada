@@ -36,7 +36,13 @@
 
 #include "Headers/AnimationUtils.h"
 
+// Another libraries
+#include <chrono>
+#include <thread>
+
 #define ARRAY_SIZE_IN_ELEMENTS(a) (sizeof(a)/sizeof(a[0]))
+
+using namespace std::chrono;
 
 int screenWidth;
 int screenHeight;
@@ -180,6 +186,10 @@ int numPasosBuzz = 0;
 
 // Var animate helicopter
 float rotHelHelY = 0.0;
+int stateLanding = 0;
+float height = 0.0f;
+int wait = 0;
+float acceleration = 10.0f;
 
 // Var animate lambo dor
 int stateDoor = 0;
@@ -289,6 +299,7 @@ void init(int width, int height, std::string strTitle, bool bFullScreen) {
 	modelEclipseFrontalWheels.setShader(&shaderMulLighting);
 	modelEclipseRearWheels.loadModel("../models/Eclipse/2003eclipse_rear_wheels.obj");
 	modelEclipseRearWheels.setShader(&shaderMulLighting);
+	
 	// Helicopter
 	modelHeliChasis.loadModel("../models/Helicopter/Mi_24_chasis.obj");
 	modelHeliChasis.setShader(&shaderMulLighting);
@@ -1027,6 +1038,7 @@ void applicationLoop() {
 
 		// Helicopter
 		glm::mat4 modelMatrixHeliChasis = glm::mat4(modelMatrixHeli);
+		modelMatrixHeliChasis = glm::translate(modelMatrixHeliChasis, glm::vec3(0.0f,height,0.0f)); // minimo para decender: -9.9f
 		modelHeliChasis.render(modelMatrixHeliChasis);
 
 		glm::mat4 modelMatrixHeliHeli = glm::mat4(modelMatrixHeliChasis);
@@ -1228,12 +1240,11 @@ void applicationLoop() {
 		}
 
 		// Constantes de animaciones
-		rotHelHelY += 0.5;
+		
 
-
-		// Maquina de estado
+		// Maquinas de estado
 		switch (state){
-		case 0:
+		case 0: // Estado en el que se decide cuanto se avanza en linea recta
 			
 			if(numberAdvance == 0)
 				maxAdvance = 65.0f;
@@ -1251,7 +1262,7 @@ void applicationLoop() {
 			state = 1;
 			break;
 
-		case 1:
+		case 1: // Estado en que avanza (translada) con base en numberAdvance y el maxAdvance
 			modelMatrixEclipse = glm::translate(modelMatrixEclipse,glm::vec3(0.0,0.0,avanceEclipse));
 
 			advanceCount += avanceEclipse;
@@ -1270,7 +1281,7 @@ void applicationLoop() {
 			}
 
 			break;
-		case 2:
+		case 2: // giros
 			modelMatrixEclipse = glm::translate(modelMatrixEclipse,glm::vec3(0.0f,0.0f,0.025f));
 			modelMatrixEclipse = glm::rotate(modelMatrixEclipse, glm::radians(rotEclipse) ,glm::vec3(0.0f,1.0f,0.0f));
 			
@@ -1278,12 +1289,14 @@ void applicationLoop() {
 			rotWheelsY += 0.0025f;
 			rotWheelsX += 0.025;
 
-			if(rotWheelsY > 0.25f)
-				rotWheelsY = 25.0f;
+			if(rotWheelsY > 0.2f)
+				rotWheelsY = 0.2f;
 
 			if(rotCount > 90.0){
 				rotCount = 0;
 				state = 0;
+				/*if (numberAdvance > 4)
+					numberAdvance = 1;*/
 			}
 
 		default:
@@ -1304,6 +1317,37 @@ void applicationLoop() {
 				stateDoor = 0;
 			break;
 
+		default:
+			break;
+		}
+
+
+		rotHelHelY += (0.05 * acceleration);
+		
+		// Maquina de estados del Helicoptero
+		switch (stateLanding){
+		case 0:
+			wait += 1;
+			if (wait == 100) {
+				wait = 0;
+				stateLanding = 1;
+			}
+			break;
+		case 1:
+
+			height -= 0.01f;
+			if (height < -9.9f) {
+				height = -9.9f;
+				stateLanding = 2;
+			}
+		case 2:
+			if (height == -9.9f) {
+				acceleration -= 0.05f;
+				if (acceleration < 0.0f)
+					acceleration = 0.0f;
+			}
+				
+			break;
 		default:
 			break;
 		}
