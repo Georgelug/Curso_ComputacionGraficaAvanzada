@@ -72,6 +72,8 @@ Model modelEclipseFrontalWheels;
 Model modelHeliChasis;
 Model modelHeliHeli;
 Model modelHeliRear;
+
+// Lambo
 Model modelLambo;
 Model modelLamboLeftDor;
 Model modelLamboRightDor;
@@ -79,6 +81,7 @@ Model modelLamboFrontLeftWheel;
 Model modelLamboFrontRightWheel;
 Model modelLamboRearLeftWheel;
 Model modelLamboRearRightWheel;
+
 // Dart lego
 Model modelDartLegoBody;
 Model modelDartLegoHead;
@@ -194,6 +197,9 @@ float acceleration = 10.0f;
 // Var animate lambo dor
 int stateDoor = 0;
 float dorRotCount = 0.0;
+
+// Var animate lambo
+
 
 double deltaTime;
 double currTime, lastTime;
@@ -797,15 +803,29 @@ void applicationLoop() {
 
 	modelMatrixEclipse = glm::translate(modelMatrixEclipse, glm::vec3(27.5, 0, 30.0));
 	modelMatrixEclipse = glm::rotate(modelMatrixEclipse, glm::radians(180.0f), glm::vec3(0, 1, 0));
+
+	// Eclipse
 	int state = 0;
 	float advanceCount = 0.0;
 	float rotCount = 0.0;
 	float rotWheelsX = 0.0;
 	float rotWheelsY = 0.0;
 	int numberAdvance = 0;
-	int maxAdvance = 0.0;
+	int maxAdvance = 0;
 	const float avanceEclipse = 0.1f;
 	const float rotEclipse = 0.5f;
+
+	// Lambo
+	int stateLambo = 0;
+	float advanceCountLambo = 0.0;
+	float rotCountLambo = 0.0;
+	float rotWheelsXLambo = 0.0;
+	float rotWheelsYLambo = 0.0;
+	int numberAdvanceLambo = 0;
+	int maxAdvanceLambo = 0;
+	const float avanceLambo = 0.1f;
+	const float rotLambo = 0.5f;
+
 
 	matrixModelRock = glm::translate(matrixModelRock, glm::vec3(-3.0, 0.0, 2.0));
 
@@ -1067,10 +1087,15 @@ void applicationLoop() {
 		modelMatrixLamboLeftDor = glm::translate(modelMatrixLamboLeftDor, glm::vec3(-1.08676, -0.707316, -0.982601));
 		modelLamboLeftDor.render(modelMatrixLamboLeftDor);
 		modelLamboRightDor.render(modelMatrixLamboChasis);
+
+		// agregar aqui para que rueden y giren
 		modelLamboFrontLeftWheel.render(modelMatrixLamboChasis);
 		modelLamboFrontRightWheel.render(modelMatrixLamboChasis);
+
+		// solo rodar
 		modelLamboRearLeftWheel.render(modelMatrixLamboChasis);
 		modelLamboRearRightWheel.render(modelMatrixLamboChasis);
+
 		// Se regresa el cull faces IMPORTANTE para las puertas
 		glEnable(GL_CULL_FACE);
 
@@ -1295,8 +1320,8 @@ void applicationLoop() {
 			if(rotCount > 90.0){
 				rotCount = 0;
 				state = 0;
-				/*if (numberAdvance > 4)
-					numberAdvance = 1;*/
+				if (numberAdvance > 4)
+					numberAdvance = 1;
 			}
 
 		default:
@@ -1351,6 +1376,67 @@ void applicationLoop() {
 		default:
 			break;
 		}
+
+		// Maquina de estados del Lambo
+		switch (stateLambo) {
+			case 0: // Estado en el que se decide cuanto se avanza en linea recta
+				if (numberAdvanceLambo == 0)
+					maxAdvanceLambo = 10.0f;
+				else if (numberAdvanceLambo == 1)
+					maxAdvanceLambo = 49.0f;
+
+				else if (numberAdvanceLambo == 2)
+					maxAdvanceLambo = 44.5f;
+
+				else if (numberAdvanceLambo == 3)
+					maxAdvanceLambo = 49.0f;
+
+				else if (numberAdvanceLambo == 4)
+					maxAdvanceLambo = 44.5f;
+
+				stateLambo = 1;
+				break;
+
+			case 1: // Estado en que avanza (translada) con base en numberAdvance y el maxAdvance
+				modelMatrixLambo = glm::translate(modelMatrixLambo, glm::vec3(0.0, 0.0, avanceLambo));
+
+				advanceCountLambo += avanceLambo;
+				rotWheelsXLambo += 0.025f;
+				rotWheelsYLambo -= 0.0025f;
+
+				if (rotWheelsYLambo < 0.0f)
+					rotWheelsYLambo = 0.0f;
+
+				if (advanceCountLambo > maxAdvanceLambo) {
+					advanceCountLambo = 0.0f;
+					numberAdvanceLambo++;
+					stateLambo = 2;
+					if (advanceCountLambo > 3)
+						advanceCountLambo = 1;
+				}
+
+				break;
+			case 2: // giros
+				modelMatrixLambo = glm::translate(modelMatrixLambo, glm::vec3(0.0f, 0.0f, 0.025f));
+				modelMatrixLambo = glm::rotate(modelMatrixLambo, glm::radians(-rotLambo), glm::vec3(0.0f, 1.0f, 0.0f));
+
+				rotCountLambo += rotLambo;
+				rotWheelsYLambo += 0.0025f;
+				rotWheelsXLambo += 0.025;
+
+				if (rotWheelsYLambo > 0.2f)
+					rotWheelsYLambo = 0.2f;
+
+				if (rotCountLambo > 90.0) {
+					rotCountLambo = 0;
+					stateLambo = 0;
+					/*if (numberAdvance > 4)
+						numberAdvance = 1;*/
+				}
+
+			default:
+				break;
+			}
 
 		glfwSwapBuffers(window);
 	}
