@@ -102,7 +102,7 @@ Model guardianModelAnimate;
 Model cyborgModelAnimate;
 
 // 0 ,0 posicion. 200 tamaño y 8 maxima ponderación 
-Terrain terrain(-1,-1, 200,8,"../Textures/terrain-2024.png");
+Terrain terrain(-1,-1, 200,8,"../Textures/heightmap.png");
 
 GLuint textureCespedID, textureWallID, textureWindowID, textureHighwayID, textureLandingPadID;
 GLuint skyboxTextureID;
@@ -932,11 +932,11 @@ void applicationLoop() {
 		//Terrain render
 		glBindTexture(GL_TEXTURE_2D, textureCespedID);
 		glActiveTexture(GL_TEXTURE0);
-		shaderMulLighting.setVectorFloat2("scaleUV",glm::value_ptr(glm::vect2(200.0f)));
+		shaderMulLighting.setVectorFloat2("scaleUV",glm::value_ptr(glm::vec2(200.0f)));
 		//terrain.eneableWireMode(); // habilita el rederizado con puros triangulos
 		terrain.setPosition(glm::vec3(100.0f,0.0f,100.0f));
 		terrain.render();
-		shaderMulLighting.setVectorFloat2("scaleUV",glm::value_ptr(glm::vect2(1.0f)));
+		shaderMulLighting.setVectorFloat2("scaleUV",glm::value_ptr(glm::vec2(1.0f)));
 		glBindTexture(GL_TEXTURE_2D, 0);
 
 		/*******************************************
@@ -1088,11 +1088,11 @@ void applicationLoop() {
 		 * Objetos animados por huesos
 		 * **************************************/
 		// para interpolar el modelo con base en el relieve de la textura del terreno
-		modelMatrixMayow[3][1] = terrain.getHeigthTerrain(modelMatrixMayow[3][0], modelMatrixMayow[3][2]); 
+		modelMatrixMayow[3][1] = terrain.getHeightTerrain(modelMatrixMayow[3][0], modelMatrixMayow[3][2]); 
 		glm::vec3 ejey = glm::normalize(terrain.getNormalTerrain(modelMatrixMayow[3][0], modelMatrixMayow[3][2]));
-		glm::ve3 ejez = glm::normalize(terrain.getNormalTerrain(modelMatrixMayow[2]));
-		glm::ve3 ejex = glm::normalize(glm::cross(ejey,ejez));
-		ejez=glm::normilize(glm::cross(ejex,ejez));
+		glm::vec3 ejez = glm::normalize(modelMatrixMayow[2]);
+		glm::vec3 ejex = glm::normalize(glm::cross(ejey,ejez));
+		ejez=glm::normalize(glm::cross(ejex, ejey));
 		modelMatrixMayow[0] = glm::vec4(ejex,0.0f);
 		modelMatrixMayow[1] = glm::vec4(ejey,0.0f);
 		modelMatrixMayow[2] = glm::vec4(ejez,0.0f);

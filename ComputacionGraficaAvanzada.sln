@@ -1,7 +1,6 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2026
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CGALib", "CGALib\CGALib.vcxproj", "{172F046A-36B0-41D6-A3D8-5A9E12F214E6}"
 EndProject
@@ -10,6 +9,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "00-Introduccion", "00-Introduccion\00-Introduccion.vcxproj", "{53B73353-8E67-4F21-9A5B-DD4B440ECE35}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02-AnimacionKeyFrames", "02-SkeletonAnimation\02-AnimacionKeyFrames.vcxproj", "{A71035FD-4041-4D70-9413-F92C77668C1E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03-Terrain", "03-Terrain\03-Terrain.vcxproj", "{2C2A7665-89B5-4089-B316-9E77BC7C937F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +52,14 @@ Global
 		{A71035FD-4041-4D70-9413-F92C77668C1E}.Release|x64.Build.0 = Release|x64
 		{A71035FD-4041-4D70-9413-F92C77668C1E}.Release|x86.ActiveCfg = Release|Win32
 		{A71035FD-4041-4D70-9413-F92C77668C1E}.Release|x86.Build.0 = Release|Win32
+		{2C2A7665-89B5-4089-B316-9E77BC7C937F}.Debug|x64.ActiveCfg = Debug|x64
+		{2C2A7665-89B5-4089-B316-9E77BC7C937F}.Debug|x64.Build.0 = Debug|x64
+		{2C2A7665-89B5-4089-B316-9E77BC7C937F}.Debug|x86.ActiveCfg = Debug|Win32
+		{2C2A7665-89B5-4089-B316-9E77BC7C937F}.Debug|x86.Build.0 = Debug|Win32
+		{2C2A7665-89B5-4089-B316-9E77BC7C937F}.Release|x64.ActiveCfg = Release|x64
+		{2C2A7665-89B5-4089-B316-9E77BC7C937F}.Release|x64.Build.0 = Release|x64
+		{2C2A7665-89B5-4089-B316-9E77BC7C937F}.Release|x86.ActiveCfg = Release|Win32
+		{2C2A7665-89B5-4089-B316-9E77BC7C937F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
