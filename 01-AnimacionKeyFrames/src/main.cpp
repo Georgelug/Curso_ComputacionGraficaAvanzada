@@ -36,9 +36,6 @@
 
 #include "Headers/AnimationUtils.h"
 
-// Another libraries
-#include <chrono>
-#include <thread>
 
 #define ARRAY_SIZE_IN_ELEMENTS(a) (sizeof(a)/sizeof(a[0]))
 
@@ -189,10 +186,10 @@ int numPasosBuzz = 0;
 
 // Var animate helicopter
 float rotHelHelY = 0.0;
-int stateLanding = 0;
-float height = 0.0f;
-int wait = 0;
-float acceleration = 10.0f;
+int stateLanding = 0; // agregada
+float height = 0.0f; // agregada
+int wait = 0;// agregada
+float acceleration = 10.0f;// agregada
 
 // Var animate lambo dor
 int stateDoor = 0;
@@ -816,16 +813,16 @@ void applicationLoop() {
 	const float rotEclipse = 0.5f;
 
 	// Lambo
-	int stateLambo = 0;
-	float advanceCountLambo = 0.0;
-	float rotCountLambo = 0.0;
-	float rotWheelsXLambo = 0.0;
-	float rotWheelsYLambo = 0.0;
-	int numberAdvanceLambo = 0;
-	int maxAdvanceLambo = 0;
-	const float avanceLambo = 0.1f;
-	const float rotLambo = 0.5f;
-	int contLambo = 0;
+	int stateLambo = 0; // agregada
+	float advanceCountLambo = 0.0; // agregada
+	float rotCountLambo = 0.0; // agregada
+	float rotWheelsXLambo = 0.0; // agregada
+	float rotWheelsYLambo = 0.0; // agregada
+	int numberAdvanceLambo = 0;// agregada
+	int maxAdvanceLambo = 0;// agregada
+	const float avanceLambo = 0.1f;// agregada
+	const float rotLambo = 0.5f;// agregada
+	int contLambo = 0;// agregada
 
 
 	matrixModelRock = glm::translate(matrixModelRock, glm::vec3(-3.0, 0.0, 2.0));
@@ -1059,7 +1056,7 @@ void applicationLoop() {
 
 		// Helicopter
 		glm::mat4 modelMatrixHeliChasis = glm::mat4(modelMatrixHeli);
-		modelMatrixHeliChasis = glm::translate(modelMatrixHeliChasis, glm::vec3(0.0f,height,0.0f)); // minimo para decender: -9.9f
+		modelMatrixHeliChasis = glm::translate(modelMatrixHeliChasis, glm::vec3(0.0f,height,0.0f)); // minimo para decender: -9.9f // agregada
 		modelHeliChasis.render(modelMatrixHeliChasis);
 
 		glm::mat4 modelMatrixHeliHeli = glm::mat4(modelMatrixHeliChasis);
@@ -1076,7 +1073,7 @@ void applicationLoop() {
 		// nota: siempre ver de abajo hacia arriba las operaciones que se realizan sobre las matrices.
 		// En este caso se manda hacia el origen, despues de rota y finalmente se regresa a donde estaba
 		
-		// Lambo car
+		// Lambo car // agregada todo lo del lambo
 		glDisable(GL_CULL_FACE);
 		glm::mat4 modelMatrixLamboChasis = glm::mat4(modelMatrixLambo);
 		modelMatrixLamboChasis = glm::scale(modelMatrixLamboChasis, glm::vec3(1.3, 1.3, 1.3));
@@ -1116,7 +1113,7 @@ void applicationLoop() {
 		modelMatrixLamboRearRightWheel = glm::rotate(modelMatrixLamboRearRightWheel, rotWheelsXLambo, glm::vec3(1.0, 0, 0));
 		modelMatrixLamboRearRightWheel = glm::translate(modelMatrixLamboRearRightWheel, glm::vec3(0.749836, -0.397564, 1.60137));
 		modelLamboRearRightWheel.render(modelMatrixLamboRearRightWheel);
-
+		// hasta acá termina lo del lambo
 		
 		// Se regresa el cull faces IMPORTANTE para las puertas
 		glEnable(GL_CULL_FACE);
@@ -1352,7 +1349,7 @@ void applicationLoop() {
 		default:
 			break;
 		}
-
+		// Comentar esto del state door
 		// Maquina de estados de lambo
 		/*switch (stateDoor){
 		case 0:
@@ -1372,9 +1369,9 @@ void applicationLoop() {
 		}*/
 
 
-		rotHelHelY += (0.05 * acceleration);
+		rotHelHelY += (0.05 * acceleration); // agregada
 		
-		// Maquina de estados del Helicoptero
+		// Maquina de estados del Helicoptero // agregada
 		switch (stateLanding){
 		case 0:
 			wait += 1;
@@ -1402,7 +1399,7 @@ void applicationLoop() {
 			break;
 		}
 
-		// Maquina de estados del Lambo
+		// Maquina de estados del Lambo // agregada
 		switch (stateLambo) {
 			case 0: // Estado en el que se decide cuanto se avanza en linea recta
 				if (numberAdvanceLambo == 0)
@@ -1477,6 +1474,8 @@ void applicationLoop() {
 			default:
 				break;
 			}
+
+		// hasta aca termina el codigo agregado
 
 		glfwSwapBuffers(window);
 	}
